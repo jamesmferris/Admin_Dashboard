@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Admin Dashboard</title>
+    <meta name="description" content="Admin dashboard design project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="sidebar-container">
+      <div class="sidebar-header">
+        <img src="./icons/sidebar/dashboard.svg" alt="Dashboard icon" class="sidebar-header-icon" />
+        <p class="sidebar-header-text">Dashboard</p>
+      </div>
+
+      <ul class="sidebar-main-links">
+        <li>
+          <a href="#" class="sidebar-link home-link">
+            <img src="./icons/sidebar/home.svg" alt="Home icon" class="sidebar-main-links-icon" />
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="sidebar-link profile-link">
+            <img src="./icons/sidebar/profile.svg" alt="Profile icon" class="sidebar-main-links-icon" />
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="sidebar-link messages-link">
+            <img src="./icons/sidebar/messages.svg" alt="Messages icon" class="sidebar-main-links-icon" />
+            <span>Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="sidebar-link history-link">
+            <img src="./icons/sidebar/history.svg" alt="History icon" class="sidebar-main-links-icon" />
+            <span>History</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="sidebar-link tasks-link">
+            <img src="./icons/sidebar/tasks.svg" alt="Tasks icon" class="sidebar-main-links-icon" />
+            <span>Tasks</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="sidebar-link communities-link">
+            <img src="./icons/sidebar/communities.svg" alt="Communities icon" class="sidebar-main-links-icon" />
+            <span>Communities</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="sidebar-secondary-links">
+        <li>
+          <a href="#" class="sidebar-link settings-link">
+            <img src="./icons/sidebar/settings.svg" alt="Settings icon" class="sidebar-secondary-links-icon" />
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="sidebar-link support-link">
+            <img src="./icons/sidebar/support.svg" alt="Support icon" class="sidebar-secondary-links-icon" />
+            <span>Support</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="sidebar-link privacy-link">
+            <img src="./icons/sidebar/privacy.svg" alt="Privacy icon" class="sidebar-secondary-links-icon" />
+            <span>Privacy</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="dashboard-header">
+      <div class="search-container">
+        <label for="search-input" class="visually-hidden">Search</label>
+        <input type="search" id="search-input" />
+        <button type="button" aria-label="search" class="header-button">
+          <img src="./icons/header/search.svg" alt="Search button icon" class="dashboard-header-icon" />
+        </button>
+      </div>
+
+      <div class="user-profile-container">
+        <button type="button" aria-label="Notifications" class="header-button">
+          <img src="./icons/header/alerts.svg" alt="Notifications button icon" class="dashboard-header-icon" />
+        </button>
+        <div class="user-profile">
+          <img src="./icons/header/james.svg" alt="User avatar" class="user-avatar-small" />
+          <span>James Ferris</span>
+        </div>
+      </div>
+
+      <div class="bottom-row-container">
+        <div class="user-greeting">
+          <img src="./icons/header/james.svg" alt="User avatar" class="user-avatar-large" />
+          <div class="greeting-text">
+            <p class="greeting">Hi there,</p>
+            <h1 class="user-name">James Ferris (<span class="user-handle">@james</span>)</h1>
+          </div>
+        </div>
+        <div class="action-buttons">
+          <button type="button">New</button>
+          <button type="button">Upload</button>
+          <button type="button">Share</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="dashboard-main">
+      <section class="projects-section">
+        <h2>Your Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Super Cool Project</h3>
+            <p>Project description...</p>
+            <div class="project-actions">
+              <button type="button" aria-label="Mark complete" class="project-action-button">
+                <img src="./icons/main/complete.svg" alt="" class="project-action-icon" />
+              </button>
+              <button type="button" aria-label="Edit project" class="project-action-button">
+                <img src="./icons/main/edit.svg" alt="" class="project-action-icon" />
+              </button>
+              <button type="button" aria-label="Share project" class="project-action-button">
+                <img src="./icons/main/share.svg" alt="" class="project-action-icon" />
+              </button>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>Less Cool Project</h3>
+            <p>Project description...</p>
+            <div class="project-actions">
+              <button type="button" aria-label="Mark complete" class="project-action-button">
+                <img src="./icons/main/complete.svg" alt="" class="project-action-icon" />
+              </button>
+              <button type="button" aria-label="Edit project" class="project-action-button">
+                <img src="./icons/main/edit.svg" alt="" class="project-action-icon" />
+              </button>
+              <button type="button" aria-label="Share project" class="project-action-button">
+                <img src="./icons/main/share.svg" alt="" class="project-action-icon" />
+              </button>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>Impossible App</h3>
+            <p>Project description...</p>
+            <div class="project-actions">
+              <button type="button" aria-label="Mark complete" class="project-action-button">
+                <img src="./icons/main/complete.svg" alt="" class="project-action-icon" />
+              </button>
+              <button type="button" aria-label="Edit project" class="project-action-button">
+                <img src="./icons/main/edit.svg" alt="" class="project-action-icon" />
+              </button>
+              <button type="button" aria-label="Share project" class="project-action-button">
+                <img src="./icons/main/share.svg" alt="" class="project-action-icon" />
+              </button>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>Easy Peasy App</h3>
+            <p>Project description...</p>
+            <div class="project-actions">
+              <button type="button" aria-label="Mark complete" class="project-action-button">
+                <img src="./icons/main/complete.svg" alt="" class="project-action-icon" />
+              </button>
+              <button type="button" aria-label="Edit project" class="project-action-button">
+                <img src="./icons/main/edit.svg" alt="" class="project-action-icon" />
+              </button>
+              <button type="button" aria-label="Share project" class="project-action-button">
+                <img src="./icons/main/share.svg" alt="" class="project-action-icon" />
+              </button>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>Ad Blocker</h3>
+            <p>Project description...</p>
+            <div class="project-actions">
+              <button type="button" aria-label="Mark complete" class="project-action-button">
+                <img src="./icons/main/complete.svg" alt="" class="project-action-icon" />
+              </button>
+              <button type="button" aria-label="Edit project" class="project-action-button">
+                <img src="./icons/main/edit.svg" alt="" class="project-action-icon" />
+              </button>
+              <button type="button" aria-label="Share project" class="project-action-button">
+                <img src="./icons/main/share.svg" alt="" class="project-action-icon" />
+              </button>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>Money Maker</h3>
+            <p>Project description...</p>
+            <div class="project-actions">
+              <button type="button" aria-label="Mark complete" class="project-action-button">
+                <img src="./icons/main/complete.svg" alt="" class="project-action-icon" />
+              </button>
+              <button type="button" aria-label="Edit project" class="project-action-button">
+                <img src="./icons/main/edit.svg" alt="" class="project-action-icon" />
+              </button>
+              <button type="button" aria-label="Share project" class="project-action-button">
+                <img src="./icons/main/share.svg" alt="" class="project-action-icon" />
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="dashboard-main-sidebar">
+        <section class="announcements-section">
+          <h2>Announcements</h2>
+          <ul class="announcements">
+            <li>
+              <h4>Site Maintenance</h4>
+              <p class="announcement-description">We will be performing scheduled maintenance on our site this weekend to improve performance and security. The site will be temporarily unavailable on Saturday from 12:00 AM to 6:00 AM (PST). We apologize for any inconvenience and appreciate your understanding as we work to enhance your experience.</p>
+            </li>
+            <li>
+              <h4>Community Share Day</h4>
+              <p class="announcement-description">Join us for Community Share Day next Friday! This is an opportunity for developers to share their projects, get feedback, and network with peers. Presentations will be held from 10:00 AM to 3:00 PM (PST), followed by a virtual meet-and-greet. Don't miss this chance to connect and collaborate!</p>
+            </li>
+            <li>
+              <h4>Updated Privacy Policy</h4>
+              <p class="announcement-description">We have updated our Privacy Policy to provide more transparency about the data we collect and how it is used. Please review the changes at your earliest convenience. Your continued use of our platform indicates your acceptance of these updates. Thank you for trusting us with your information.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="trending-section">
+          <h2>Trending</h2>
+          <ul class="trending-links">
+            <li>
+              <a href="#" class="trending-link zuck-link" aria-label="Zuck's Facebook project">
+                <img src="./icons/main/zuck.svg" alt="User avatar" class="user-avatar-small" />
+                <p class="account-handle">@zuck</p>
+                <p class="trending-project-title">Facebook</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="trending-link elon-link" aria-label="Elon's Tesla project">
+                <img src="./icons/main/elon.svg" alt="User avatar" class="user-avatar-small" />
+                <p class="account-handle">@elon</p>
+                <p class="trending-project-title">Tesla</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="trending-link bill-link" aria-label="Bill's Microsoft project">
+                <img src="./icons/main/gates.svg" alt="User avatar" class="user-avatar-small" />
+                <p class="account-handle">@gates</p>
+                <p class="trending-project-title">Microsoft</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+  </body>
+</html>
